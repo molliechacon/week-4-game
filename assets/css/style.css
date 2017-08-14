@@ -52,10 +52,6 @@ body {
 	margin: 10px 0px 10px;
 }
 
-#totalScoreHeading, #totalScoreNumber {
-	background-color: green;
-}
-
 #totalScoreHeading {
 	background-color: #76a27f;
 	color: white;

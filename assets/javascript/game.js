@@ -11,7 +11,7 @@ $(document).ready(function() {
 	$("#losses").text(losses);
 
 
-// assiging a random number to reach b/w 19-120
+// initially assiging a random number to reach b/w 19-120
 	var numberToReach = Math.floor((Math.random() * 101) + 19);
 	$("#numberToReach").text(numberToReach);
 
@@ -39,14 +39,14 @@ $(document).ready(function() {
 
 // reset function
 	function reset() {
-      numberToReach = Math.floor((Math.random() * 101) +19);
-      $("#numberToReach").text(numberToReach);
-      red = Math.floor((Math.random()* 12) + 1)
-      blue = Math.floor((Math.random()* 12) + 1)
-      green = Math.floor((Math.random()* 12) + 1)
-      yellow = Math.floor((Math.random()* 12) + 1)
-      counter = 0;
-      $("#userScore").text(counter);
+        numberToReach = Math.floor((Math.random() * 101) +19);
+        $("#numberToReach").text(numberToReach);
+        red = Math.floor((Math.random()* 12) + 1);
+        blue = Math.floor((Math.random()* 12) + 1);
+        green = Math.floor((Math.random()* 12) + 1);
+        ellow = Math.floor((Math.random()* 12) + 1);
+        counter = 0;
+        $("#userScore").text(counter);
     } 
 
 // onclick functions for each crystal
@@ -78,7 +78,7 @@ $(document).ready(function() {
 		        }else if (counter > numberToReach){
 		          youLose();
 		        } 
-    })
+   	})
    	  
   	$("#yellow").on("click", function() {
     	counter = counter + yellow;
